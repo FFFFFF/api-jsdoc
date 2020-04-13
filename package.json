@@ -1,0 +1,28 @@
+{
+  "name": "doc-api",
+  "version": "1.0.0",
+  "description": "A Web API documentation generator for endpoints.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FFFFFF/doc-api.git"
+  },
+  "author": "Alexander Korotkov",
+  "license": "Apache-2.0",
+  "keywords": [
+    "jsdoc",
+    "doc",
+    "docs",
+    "documentation",
+    "generator",
+    "doc-api",
+    "api",
+    "rest",
+    "restful"
+  ],
+  "files": [
+    "plugin"
+  ],
+  "dependencies": {
+    "docdash": "github:ffffff/docdash"
+  }
+}
