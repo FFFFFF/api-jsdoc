@@ -20,7 +20,8 @@
     "restful"
   ],
   "files": [
-    "plugin"
+    "events.js",
+    "tags.js"
   ],
   "dependencies": {
     "docdash": "github:ffffff/docdash"
