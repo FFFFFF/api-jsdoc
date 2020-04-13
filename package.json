@@ -1,10 +1,10 @@
 {
-  "name": "doc-api",
+  "name": "api-jsdoc",
   "version": "1.0.0",
   "description": "A Web API documentation generator for endpoints.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FFFFFF/doc-api.git"
+    "url": "https://github.com/FFFFFF/api-jsdoc.git"
   },
   "author": "Alexander Korotkov",
   "license": "Apache-2.0",

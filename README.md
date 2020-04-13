@@ -6,7 +6,7 @@ A Web API documentation generator based on [JSDoc](https://github.com/jsdoc/jsdo
 
 ```bash
 $ npm install jsdoc
-$ npm install doc-api
+$ npm install api-jsdoc
 ```
 
 ## Usage
@@ -32,12 +32,12 @@ Add `jsdoc.json` file in your project.
         "excludePattern": "(node_modules/|docs)"
     },
     "plugins": [
-        "node_modules/doc-api/events",
-        "node_modules/doc-api/tags",
+        "node_modules/api-jsdoc/events",
+        "node_modules/api-jsdoc/tags",
         "plugins/markdown"
     ],
     "opts": {
-        "template": "node_modules/doc-api/node_modules/docdash",
+        "template": "node_modules/docdash",
         "encoding": "utf8",
         "destination": "docs/",
         "recurse": true,
