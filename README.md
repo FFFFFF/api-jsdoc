@@ -1,4 +1,4 @@
-# doc-api
+# api-jsdoc
 
 A Web API documentation generator based on [JSDoc](https://github.com/jsdoc/jsdoc) and [docdash](https://github.com/clenemt/docdash) template theme.
 
