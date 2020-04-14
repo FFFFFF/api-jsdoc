@@ -9,7 +9,6 @@ $ npm install jsdoc
 $ npm install api-jsdoc
 ```
 
-## Usage
 In your projects `package.json` file add a new script:
 
 ```json
@@ -24,30 +23,74 @@ Add `jsdoc.json` file in your project.
 ```json
 {
     "tags": {
-        "allowUnknownTags": true
+      "allowUnknownTags": true
     },
     "source": {
-        "include": "router/api",
-        "includePattern": "\\.js$",
-        "excludePattern": "(node_modules/|docs)"
+      "include": "router/api",
+      "includePattern": "\\.js$",
+      "excludePattern": "(node_modules/|docs)"
     },
     "plugins": [
-        "node_modules/api-jsdoc/events",
-        "node_modules/api-jsdoc/tags",
-        "plugins/markdown"
+      "node_modules/api-jsdoc/events",
+      "node_modules/api-jsdoc/tags",
+      "plugins/markdown"
     ],
     "opts": {
-        "template": "node_modules/docdash",
-        "encoding": "utf8",
-        "destination": "docs/",
-        "recurse": true,
-        "verbose": true
+      "template": "node_modules/docdash",
+      "encoding": "utf8",
+      "destination": "docs/",
+      "recurse": true,
+      "verbose": true
     },
     "templates": {
-        "cleverLinks": false,
-        "monospaceLinks": false
+      "cleverLinks": false,
+      "monospaceLinks": false
+    },
+    "docdash": {
+      "sectionLabel": {
+        "Namespaces": "Routes"
     }
+  }
 }
+```
+
+## Usage
+
+Add comments anywhere in your source code:
+
+```javascript
+/**
+ * Returns data about a user.
+ *
+ * @uri GET user/:id
+ * @param id {number} User id
+ * @returns {object[]}
+ * @response name {string} User name
+ * @response address {string} User address
+ */
+```
+
+To group endpoints under a label use `namespace`:
+
+```javascript
+/**
+ * Application's user.
+ * @namespace user
+ */
+```
+
+And add `memberof` in the comment:
+
+```javascript
+/**
+ * Creats a user.
+ * @memberof cargo
+ * @uri POST user
+ * @param name {string} User name
+ * @param address {string} User address
+ * @returns {object}
+ * @response success {boolen}
+ */
 ```
 
 ## License
