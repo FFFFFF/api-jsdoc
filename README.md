@@ -27,7 +27,7 @@ Add `jsdoc.json` file in your project.
         "allowUnknownTags": true
     },
     "source": {
-        "include": "../js",
+        "include": "router/api",
         "includePattern": "\\.js$",
         "excludePattern": "(node_modules/|docs)"
     },
